@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CH Center Officer</string>
+    <string name="app_name">Caring Hearts Officer </string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -12,55 +12,6 @@
 
     shivani 15/10/18
     <string name="chc_banking_information">CHC Banking Information</string>
-
-
-    // shivani 25/10/18
-    <string name="lead_nurture">Lead Nurture</string>
-    <string name="registration">Registrations</string>
-    <string name="chs_receipt">CHS Registration Receipt </string>
-
-
-    <string name="reg_nurture">Register Nurture</string>
-    <string name="view_nurture">View Nurture</string>
-    <string name="select_lead">Select Lead</string>
-    <string name="previous_comments">Previous Comments</string>
-    <string name="nurture_mode">Nurture Mode</string>
-    <string name="center_name">Center Name</string>
-    <string name="discussed_with">Discussed With</string>
-    <string name="action_required">Action Required</string>
-    <string name="next_appointment">Next Appointment</string>
-    <string name="next_appointment_purpose">Next Appointment Purpose</string>
-    <string name="remarks_for_team">Remarks For Team</string>
-    <string name="history">History</string>
-    <string name="state">State</string>
-    <string name="remarks">Remarks</string>
-    <string name="connect_to">Connect To</string>
-    <string name="add_proof">Address Proof</string>
-    <string name="select_img">Select Image</string>
-    <string name="center_head_name">Center Head Name</string>
-    <string name="center_head_no">Center Head No.</string>
-    <string name="center_head_email">Center Head Email</string>
-    <string name="mno">Mobile no.</string>
-    <string name="medical_center_name">Medical Center Name</string>
-    <string name="lead_name">Lead Name</string>
-    <string name="unique_id">Unique Id</string>
-    <string name="chs_name">CHS Name</string>
-    <string name="city">City</string>
-    <string name="select_package">Package</string>
-    <string name="chargeable_amount">Chargeable Amount</string>
-    <string name="amount">Amount</string>
-    <string name="receipt_no">Receipt No</string>
-    <string name="amount_received">Amount Received</string>
-    <string name="receipt_mode">Receipt Mode</string>
-    <string name="payment_proof">Payment Proof</string>
-        <string name="cheque_no">Cheque No</string>
-        <string name="bank_transaction_id">Bank Transaction Id</string>
-        <string name="paytm_transaction_id">Paytm Transaction Id</string>
-    <string name="other">Other</string>
-    <string name="country">Country</string>
-    <string name="purpose">Purpose</string>
-    <string name="uplod_sign">Upload Sign</string>
-    <string name="discussed">Discussed</string>
 
     // bankinfo strings 15/10/2018
     //divya
@@ -100,7 +51,51 @@
     <string name="profile_update_activity">Update Profile</string>
     <string name="action_change_pass">Change Password</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="str_presentaion">Presentation </string>
+
+    <!-- divya 25/10/2018 -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chs_leader_pres">CHS Lead Presentation </string>
+    <string name="next_visit_purpose">Next Visit Purpose</string>
+    <string name="appointment_date">Appointment Date</string>
+    <string name="biz_card">Biz Card</string>
+    <string name="select_leader">Select Lead</string>
+    <string name="prev_comment">Previous Comments</string>
+    <string name="date">Date</string>
+    <string name="comments">Comments</string>
+    <string name="form">Form</string>
+    <string name="submited_by">Submitted By</string>
+    <string name="comment_history">Comment History</string>
+    // shivani 25/10/18
+    <string name="lead_nurture">Lead Nurture</string>
+    <string name="registration">Registrations</string>
+
+
+
+
+    <string name="reg_nurture">Register Nurture</string>
+    <string name="view_nurture">View Nurture</string>
+    <string name="select_lead">Select Lead</string>
+    <string name="previous_comments">Previous Comments</string>
+    <string name="nurture_mode">Nurture Mode</string>
+    <string name="center_name">Center Name</string>
+    <string name="discussed_with">Discussed With</string>
+    <string name="action_required">Action Required</string>
+    <string name="next_appointment">Next Appointment</string>
+    <string name="next_appointment_purpose">Next Appointment Purpose</string>
+    <string name="remarks_for_team">Remarks For Team</string>
+    <string name="history">History</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="remarks">Remarks</string>
+    <string name="connect_to">Connect To</string>
+    <string name="add_proof">Address Proof</string>
+    <string name="select_img">Select Image</string>
+    <string name="center_head_name">Center Head Name</string>
+    <string name="center_head_no">Center Head No.</string>
+    <string name="center_head_email">Center Head Email</string>
+    <string name="mno">Mobile no.</string>
+    <string name="medical_center_name">Medical Center Name</string>
+
 
 </resources>

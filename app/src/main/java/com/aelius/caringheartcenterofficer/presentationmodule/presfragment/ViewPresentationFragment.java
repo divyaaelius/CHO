@@ -1,4 +1,4 @@
-package com.aelius.caringheartcenterofficer.register_chs.fragment;
+package com.aelius.caringheartcenterofficer.presentationmodule.presfragment;
 
 
 import android.os.Bundle;
@@ -11,17 +11,16 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.aelius.caringheartcenterofficer.R;
-import com.aelius.caringheartcenterofficer.lead_nurture.adpter.NurtureAdapter;
-import com.aelius.caringheartcenterofficer.register_chs.adpter.ViewCHSAdapter;
+import com.aelius.caringheartcenterofficer.presentationmodule.presadapter.ViewPresentationAdapter;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ViewCHSFragment extends Fragment {
+public class ViewPresentationFragment extends Fragment {
 
     RecyclerView recyclerView;
-    ViewCHSAdapter adapter;
-    public ViewCHSFragment() {
+    ViewPresentationAdapter adapter;
+    public ViewPresentationFragment() {
         // Required empty public constructor
     }
 
@@ -44,7 +43,7 @@ public class ViewCHSFragment extends Fragment {
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        adapter = new ViewCHSAdapter();
+        adapter = new ViewPresentationAdapter();
         recyclerView.setAdapter(adapter);
         adapter.notifyDataSetChanged();
     }

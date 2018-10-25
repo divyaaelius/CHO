@@ -19,12 +19,7 @@ import android.widget.ExpandableListView;
 import com.aelius.caringheartcenterofficer.Profile.ChangePasswordActivity;
 import com.aelius.caringheartcenterofficer.Profile.ProfileActivity;
 
-import com.aelius.caringheartcenterofficer.lead_nurture.fragment.NurtureListFragment;
-import com.aelius.caringheartcenterofficer.lead_nurture.fragment.NurtureRegisterFragment;
-import com.aelius.caringheartcenterofficer.receipt.fragment.CreateReceiptFragment;
-import com.aelius.caringheartcenterofficer.receipt.fragment.ViewReceiptFragment;
-import com.aelius.caringheartcenterofficer.register_chs.fragment.RegisterCHSFragment;
-import com.aelius.caringheartcenterofficer.register_chs.fragment.ViewCHSFragment;
+import com.aelius.caringheartcenterofficer.presentationmodule.presfragment.PresentationFragment;
 import com.aelius.caringheartcenterofficer.utils.PreferHelper;
 import com.techatmosphere.expandablenavigation.model.ChildModel;
 import com.techatmosphere.expandablenavigation.model.HeaderModel;
@@ -38,7 +33,9 @@ public class MainActivity extends AppCompatActivity {
     DrawerLayout drawer;
     ActionBarDrawerToggle toggle;
     NavigationView navigationView;
+
     ExpandableNavigationListView navigationExpandableListView;
+
     String deviceId;
     PreferHelper prefHelp;
 
@@ -71,18 +68,14 @@ public class MainActivity extends AppCompatActivity {
 
         navigationExpandableListView.init(this)
                 .addHeaderModel(
-                        new HeaderModel(getResources().getString(R.string.lead_nurture), R.drawable.ic_arrow_down))
+                        new HeaderModel(getResources().getString(R.string.str_presentaion), R.drawable.ic_doctor, true)
+                                .addChildModel(new ChildModel(getResources().getString(R.string.register)))
+                                .addChildModel(new ChildModel(getResources().getString(R.string.view)))
+                )
                   .addHeaderModel(
-                        new HeaderModel(getResources().getString(R.string.lead_nurture), R.drawable.ic_arrow_down,true)
-                        .addChildModel(new ChildModel(getResources().getString(R.string.register)))
-                        .addChildModel(new ChildModel(getResources().getString(R.string.view)))
-                  ).addHeaderModel(
-                        new HeaderModel(getResources().getString(R.string.registration), R.drawable.ic_arrow_down,true)
-                        .addChildModel(new ChildModel(getResources().getString(R.string.register)))
-                        .addChildModel(new ChildModel(getResources().getString(R.string.view)))
-                  )
+                        new HeaderModel(getResources().getString(R.string.app_name), R.drawable.ic_arrow_down))
                 .addHeaderModel(
-                        new HeaderModel(getResources().getString(R.string.chs_receipt), R.drawable.ic_doctor, true)
+                        new HeaderModel(getResources().getString(R.string.app_name), R.drawable.ic_doctor, true)
                                 .addChildModel(new ChildModel(getResources().getString(R.string.register)))
                                 .addChildModel(new ChildModel(getResources().getString(R.string.view)))
                 )
@@ -103,39 +96,15 @@ public class MainActivity extends AppCompatActivity {
                     public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
                         navigationExpandableListView.setSelected(groupPosition, childPosition);
 
-                        if (groupPosition == 1) {
+                        if (groupPosition == 0) {
 
                             if (childPosition == 0) {
-                                NurtureRegisterFragment addFundFrag = new NurtureRegisterFragment();
-                                FragmentReplace(addFundFrag, getString(R.string.reg_nurture));
+                                PresentationFragment addFundFrag = new PresentationFragment();
+                                FragmentReplace(addFundFrag, getString(R.string.str_presentaion));
                             }
                             if (childPosition == 1) {
-                                NurtureListFragment addFrag = new NurtureListFragment();
-                                FragmentReplace(addFrag, getString(R.string.view_nurture));
-                            }
-
-
-                        }if (groupPosition == 2) {
-
-                            if (childPosition == 0) {
-                                RegisterCHSFragment addFundFrag = new RegisterCHSFragment();
-                                FragmentReplace(addFundFrag, getString(R.string.register));
-                            }
-                            if (childPosition == 1) {
-                                ViewCHSFragment addFrag = new ViewCHSFragment();
-                                FragmentReplace(addFrag, getString(R.string.view));
-                            }
-
-
-                        }if (groupPosition == 3) {
-
-                            if (childPosition == 0) {
-                                CreateReceiptFragment addFundFrag = new CreateReceiptFragment();
-                                FragmentReplace(addFundFrag, getString(R.string.register));
-                            }
-                            if (childPosition == 1) {
-                                ViewReceiptFragment addFrag = new ViewReceiptFragment();
-                                FragmentReplace(addFrag, getString(R.string.view));
+                                /*CardiologistViewFragment addFrag = new CardiologistViewFragment();
+                                FragmentReplace(addFrag, getString(R.string.cardiologist_view));*/
                             }
 
 

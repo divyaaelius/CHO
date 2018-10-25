@@ -1,4 +1,4 @@
-package com.aelius.caringheartcenterofficer.register_chs.adpter;
+package com.aelius.caringheartcenterofficer.presentationmodule.presadapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 import com.aelius.caringheartcenterofficer.R;
 import com.aelius.caringheartcenterofficer.lead_nurture.fragment.NurtureListFragment;
 
-public class ViewCHSAdapter extends RecyclerView.Adapter<ViewCHSAdapter.MyViewHolder> {
+public class ViewPresentationAdapter extends RecyclerView.Adapter<ViewPresentationAdapter.MyViewHolder> {
 
     Context context;
     int previousExpandedPosition = -1;
@@ -20,15 +20,15 @@ public class ViewCHSAdapter extends RecyclerView.Adapter<ViewCHSAdapter.MyViewHo
 
     @NonNull
     @Override
-    public ViewCHSAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+    public ViewPresentationAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View itemView = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.item_list_viewchs, viewGroup, false);
+                .inflate(R.layout.item_presentation_view, viewGroup, false);
 
         return new MyViewHolder(itemView);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewCHSAdapter.MyViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull ViewPresentationAdapter.MyViewHolder holder, final int position) {
         // expand and collapas
         final boolean isExpanded = position == mExpandedPosition;
 
@@ -60,8 +60,8 @@ public class ViewCHSAdapter extends RecyclerView.Adapter<ViewCHSAdapter.MyViewHo
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            parent_chsview_layout=itemView.findViewById(R.id.parent_chsview_layout);
-            child_chsview_layout=itemView.findViewById(R.id.child_chsview_layout);
+            parent_chsview_layout=itemView.findViewById(R.id.parent_presenation);
+            child_chsview_layout=itemView.findViewById(R.id.child_presentation);
         }
     }
 }

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
     android:layout_margin="@dimen/marg_tendp"
     android:elevation="@dimen/marg_fivedp"
+    android:orientation="vertical"
     android:padding="@dimen/marg_fivedp">
 
     <LinearLayout
@@ -15,7 +14,7 @@
         android:padding="@dimen/marg_fivedp">
 
         <LinearLayout
-            android:id="@+id/parent_nurturelist_layout"
+            android:id="@+id/parent_presenation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -26,7 +25,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
-                android:text="@string/center_name"
+                android:text="@string/lead_name"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
@@ -41,7 +40,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/child_nurturelist_layout"
+            android:id="@+id/child_presentation"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -54,9 +53,10 @@
 
                 <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="match_parent"
-                    android:orientation="vertical" >
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
-                            android:text="@string/nurture_mode"
+                            android:text="@string/remarks"
                             android:textSize="@dimen/txt_small"
                             android:visibility="visible" />
 
@@ -80,6 +80,7 @@
                             android:text=""
                             android:textSize="@dimen/txt_small" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -91,7 +92,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
-                            android:text="@string/discussed_with"
+                            android:text="@string/next_purpose"
                             android:textSize="@dimen/txt_small"
                             android:visibility="visible" />
 
@@ -116,7 +117,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
-                            android:text="@string/action_required"
+                            android:text="@string/next_appointment"
                             android:textSize="@dimen/txt_small"
                             android:visibility="visible" />
 
@@ -143,7 +144,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:text="@string/next_appointment"
+                    android:text="@string/history"
                     android:textSize="@dimen/txt_small"
                     android:visibility="visible" />
 
@@ -156,56 +157,6 @@
                     android:textSize="@dimen/txt_small" />
             </LinearLayout>
 
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="@dimen/marg_onedp"
-                android:weightSum="1">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
-                    android:text="@string/next_appointment_purpose"
-                    android:textSize="@dimen/txt_small"
-                    android:visibility="visible" />
-
-                <TextView
-                    android:id="@+id/tv_physician_opdcharg"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
-                    android:text=""
-                    android:textSize="@dimen/txt_small" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="@dimen/marg_onedp"
-                android:weightSum="1">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
-                    android:text="@string/remarks_for_team"
-                    android:textSize="@dimen/txt_small"
-                    android:visibility="visible" />
-
-                <TextView
-                    android:id="@+id/tv_physician_payableamount"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
-                    android:text="@string/history"
-                    android:textColor="@color/colorPrimary"
-                    android:gravity="center"
-                    android:textSize="@dimen/txt_small" />
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
