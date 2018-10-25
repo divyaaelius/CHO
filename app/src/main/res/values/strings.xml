@@ -16,6 +16,9 @@
 
     // shivani 25/10/18
     <string name="lead_nurture">Lead Nurture</string>
+    <string name="registration">Registrations</string>
+
+
     <string name="reg_nurture">Register Nurture</string>
     <string name="view_nurture">View Nurture</string>
     <string name="select_lead">Select Lead</string>
@@ -29,7 +32,8 @@
     <string name="remarks_for_team">Remarks For Team</string>
     <string name="history">History</string>
     <string name="state">State</string>
-    <string name="city">City</string>
+    <string name="remarks">Remarks</string>
+    <string name="connect_to">Connect To</string>
     <string name="add_proof">Address Proof</string>
     <string name="select_img">Select Image</string>
     <string name="center_head_name">Center Head Name</string>
@@ -37,6 +41,11 @@
     <string name="center_head_email">Center Head Email</string>
     <string name="mno">Mobile no.</string>
     <string name="medical_center_name">Medical Center Name</string>
+    <string name="lead_name">Lead Name</string>
+    <string name="unique_id">Unique Id</string>
+    <string name="chs_name">CHS Name</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
 
     // bankinfo strings 15/10/2018
     //divya

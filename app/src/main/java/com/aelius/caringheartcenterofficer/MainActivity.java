@@ -21,6 +21,8 @@ import com.aelius.caringheartcenterofficer.Profile.ProfileActivity;
 
 import com.aelius.caringheartcenterofficer.lead_nurture.fragment.NurtureListFragment;
 import com.aelius.caringheartcenterofficer.lead_nurture.fragment.NurtureRegisterFragment;
+import com.aelius.caringheartcenterofficer.register_chs.fragment.RegisterCHSFragment;
+import com.aelius.caringheartcenterofficer.register_chs.fragment.ViewCHSFragment;
 import com.aelius.caringheartcenterofficer.utils.PreferHelper;
 import com.techatmosphere.expandablenavigation.model.ChildModel;
 import com.techatmosphere.expandablenavigation.model.HeaderModel;
@@ -72,6 +74,10 @@ public class MainActivity extends AppCompatActivity {
                         new HeaderModel(getResources().getString(R.string.lead_nurture), R.drawable.ic_arrow_down,true)
                         .addChildModel(new ChildModel(getResources().getString(R.string.register)))
                         .addChildModel(new ChildModel(getResources().getString(R.string.view)))
+                  ).addHeaderModel(
+                        new HeaderModel(getResources().getString(R.string.registration), R.drawable.ic_arrow_down,true)
+                        .addChildModel(new ChildModel(getResources().getString(R.string.register)))
+                        .addChildModel(new ChildModel(getResources().getString(R.string.view)))
                   )
                 .addHeaderModel(
                         new HeaderModel(getResources().getString(R.string.app_name), R.drawable.ic_doctor, true)
@@ -103,6 +109,18 @@ public class MainActivity extends AppCompatActivity {
                             if (childPosition == 1) {
                                 NurtureListFragment addFrag = new NurtureListFragment();
                                 FragmentReplace(addFrag, getString(R.string.view_nurture));
+                            }
+
+
+                        }if (groupPosition == 2) {
+
+                            if (childPosition == 0) {
+                                RegisterCHSFragment addFundFrag = new RegisterCHSFragment();
+                                FragmentReplace(addFundFrag, getString(R.string.register));
+                            }
+                            if (childPosition == 1) {
+                                ViewCHSFragment addFrag = new ViewCHSFragment();
+                                FragmentReplace(addFrag, getString(R.string.view));
                             }
 
 
