@@ -18,8 +18,7 @@ import android.widget.ExpandableListView;
 
 import com.aelius.caringheartcenterofficer.Profile.ChangePasswordActivity;
 import com.aelius.caringheartcenterofficer.Profile.ProfileActivity;
-import com.aelius.caringheartcenterofficer.bankinfo.FragmentBankInfoviewFragment;
-import com.aelius.caringheartcenterofficer.patientreport.PatientReportFragment;
+
 import com.aelius.caringheartcenterofficer.utils.PreferHelper;
 import com.techatmosphere.expandablenavigation.model.ChildModel;
 import com.techatmosphere.expandablenavigation.model.HeaderModel;
@@ -119,12 +118,10 @@ public class MainActivity extends AppCompatActivity {
     public void SelectParent(int groupposi) {
         switch (groupposi) {
             case 0:
-                FragmentBankInfoviewFragment addFundFrag1 = new FragmentBankInfoviewFragment();
-                FragmentReplace(addFundFrag1, getString(R.string.chc_banking_information));
+
                 break;
             case 1:
-                PatientReportFragment addFundFrag2 = new PatientReportFragment();
-                FragmentReplace(addFundFrag2, getString(R.string.select_speciality));
+
                 break;
             case 2:
 
