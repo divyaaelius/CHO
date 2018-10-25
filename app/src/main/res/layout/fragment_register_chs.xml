@@ -210,13 +210,56 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/marg_fivedp"
             android:gravity="bottom"
-            android:hint="@string/city"
+            android:hint="@string/connect_to"
             android:textSize="@dimen/txt_small" />
 
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:spinnerMode="dropdown" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_fivedp">
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="@string/remarks"
+                android:maxLines="3"
+                android:minLines="3"
+                android:textSize="@dimen/txt_small" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_fiftendp"
+            android:drawableRight="@drawable/ic_upload"
+            android:drawablePadding="@dimen/marg_threedp"
+            android:hint="@string/select_img"
+            android:padding="@dimen/marg_threedp"
+            android:textSize="@dimen/txt_small" />
+
+        <Button
+            android:id="@+id/btn_search_fundstatement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marg_eightdp"
+            android:background="@drawable/button_blue"
+            android:text="@string/submit"
+            android:textColor="@color/White" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_margin="@dimen/marg_eightdp"
+            android:background="@drawable/button_blue"
+            android:text="@string/submit"
+            android:textColor="@color/White" />
     </LinearLayout>
 </ScrollView>
 </FrameLayout>
