@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="@dimen/marg_fivedp"
+    android:layout_margin="@dimen/marg_fivedp"
+    tools:context=".presentationmodule.presfragment.PreviousCommentFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/marg_tendp"
+        android:gravity="right"
+        android:padding="@dimen/marg_fivedp"
+        android:text="@string/team_leader_name" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swp_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marg_thirtydp"
+        android:elevation="@dimen/marg_fivedp">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rec_prev_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/marg_tendp"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</FrameLayout>

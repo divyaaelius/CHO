@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CH Center Officer</string>
+    <string name="app_name">Caring Hearts Officer </string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -26,332 +26,46 @@
     <string name="str_name">Name</string>
     <string name="str_details">Details</string>
 
-    //-------------------------------------chc strings----------------------
-    <string name="caring_hearts_account">Caring Hearts Account</string>
-    <string name="account_statment">Account Statement</string>
-    <string name="chc_refund_request">CHC Refund Request</string>
-    <string name="service_invoice_request"> Service Invoice Request</string>
-    <string name="cardiologist">Cardiologist</string>
-
-    <string name="register">Register</string>
-    <string name="view">View</string>
-    <string name="specialty">Specialty</string>
-    <string name="physician">Physicians</string>
-    <string name="hospital_coordinator">Hospital Coordinator</string>
-    <string name="change_hc">Change HC</string>
-    <string name="view_networl_status">View Network Status</string>
-    <string name="cardiologist_code">Cardiologist Code</string>
-    <string name="license_number">License Number</string>
-    <string name="cardiologist_picture">Cardiologist Picture</string>
-    <string name="designation">Designation</string>
-    <string name="cardiologist_bio">Cardiologist Bio</string>
-    <string name="cardiologist_mobile">Cardiologist Mobile</string>
-    <string name="cardiologist_email">Cardiologist Email</string>
-    <string name="secretary_name">Secretary Name</string>
-
-    <string name="secretary_email">Secretary Email</string>
-    <string name="secretary_mobile">Secretary Mobile</string>
-    <string name="secretary_phone">Secretary Phone</string>
-    <string name="training_due_on">Training Due On</string>
-    <string name="display_name">Display Name</string>
-
-
-    <string name="physician_name">Physician Name</string>
-    <string name="select_speciality">Select Speciality</string>
-    <string name="doctor_picture">Doctor Picture</string>
-    <string name="license_regn_no">License/Regn No.</string>
-    <string name="current_working">Current Working</string>
-    <string name="dr_phone">Dr\'s Phone</string>
-    <string name="dr_email">Dr\'s Email</string>
-    <string name="select_hc">Select HC</string>
-    <string name="dr_coor_number">Dr\'s Coor. Phone No.</string>
-    <string name="dr_coor_email">Dr\'s Coor. Email.</string>
-    <string name="select_new_hc">Select New HC</string>
-
-
-    <string name="patient_opd_charg">Patient OPD Charges</string>
-    <string name="payable_amount">Payable Amount </string>
-    <string name="dr_cooname">Dr\'s Coor.Name</string>
-    <string name="dr_coonumber_full">Dr\'s Coordinator Phone Numberr</string>
-    <string name="dr_coonemail_full">Dr\'s Coordinator Email</string>
-    <string name="hc_name">HC Name</string>
-    <string name="code">Code</string>
-    <string name="date">Date</string>
-    <string name="phone_one">Phone 1</string>
-    <string name="phone_two">Phone 2</string>
-
-    <string name="add_cardiologist">Add Cardiologist </string>
-    <string name="cardiologist_view"> Cardiologist List </string>
-    <string name="add_physician"> Add Physicians</string>
-    <string name="physician_view"> Proposal Approval Nurture List </string>
-    <string name="add_hc"> Create HC</string>
-    <string name="qualification"> Qualification</string>
-    <string name="mobile">Mobile</string>
-    <string name="emailtwo">Email</string>
-
-    //Shivani 30-8-18
-    <string name="chc_name">CHC Name</string>
-    <string name="select_doctor">Select Doctor</string>
-
-    //shivani 31-8-18
-    <string name="total_amount">Total Amount</string>
-    <string name="tax_name">Tax Name</string>
-    <string name="tax_rate">Tax Rate</string>
-    <string name="tax_amount">Tax Amount</string>
-    <string name="hospital_invoice_no">Hospital Invoice No</string>
-    <string name="hospital_invoice_amount">Hospital Invoice Amount</string>
-    <string name="ecg_service">ECG Service</string>
-    <string name="opd_service">OPD Service</string>
-    <string name="vpd_service">VPD Service</string>
-    <string name="spd_service">SDP Service</string>
-    <string name="total">Total</string>
-    <string name="service_pricing">Service Pricing</string>
-    <string name="amount">Amount</string>
-    <string name="request">Request</string>
-
-    //shivani 6/9/18
-
-    <string name="team_leader_name">Team Leader Name</string>
-    <string name="team_leader_no">Team Leader No.</string>
-    <string name="network_list"> Network List </string>
-    <string name="loggedin">Logged In</string>
-    <string name="logout">Logged Out</string>
-
-    //10/9
-    <string name="norecord">No Record Found</string>
-    <string name="service_invoice_period">Service Invoicing Period</string>
-    <string name="chc_remarks">CHC Remarks</string>
-    <string name="cha_remarks">CHA Remarks</string>
-    <string name="invoice_approve_amu">Invoice Approval Amount</string>
-
-    <string name="hc_view">  Proposal Approval Nurture List </string>
-
-    //17/9
-
-    <string name="priority">Priority</string>
-    <string name="transfer">Transfer</string>
-    <string name="close">Close</string>
-    <string name="created">Created</string>
-    <string name="opened">Opened</string>
-
-
-    //-------------------------------------chs strings----------------
-
-    // divya drawer string
-
-    <string name="patient">Patient</string>
-    <string name="new_Patient">New Patient</string>
-    <string name="old_Patient">Old Patient</string>
-    <string name="edit_atient">Edit Patient</string>
-    <string name="patient_history">Patient Event History</string>
-
-    <string name="ecg_review_request">ECG Review Request</string>
-    <string name="opd_appointments">OPD Appointments</string>
-    <string name="video_consultation">Video Consultations</string>
-    <string name="second_opinion">Second Opinion</string>
-    <string name="chs_wallet">CHS Wallet</string>
-    <string name="add_funds">Add Funds</string>
-    <string name="statement_view">Statement view</string>
-    <string name="chm_visit_request">CHM Visit Request</string>
-    <string name="tech_support">Tech Support</string>
-    <string name="my_register">My  Registers</string>
-    <string name="mypatient_register">My Patient Register</string>
-    <string name="my_ecg_register">My ECG Register</string>
-    <string name="my_opd_register">My OPD Register</string>
-    <string name="my_vpd_register">My VPD Register</string>
-    <string name="my_spd_register">My SPD Register</string>
-    <string name="my_event_register">My Event Register</string>
-    <string name="my_chm_visit_request">My CHM Visit Request Register</string>
-    <string name="my_add_funds_register">My Add Funds Request Register</string>
-    <string name="my_refund_request">My Refund Request Register</string>
-    <string name="my_tech_support_request">My Tech Support Request Register</string>
-    <string name="my_canceled_request">My Canceled Request Register</string>
-    <string name="pricing">Pricing</string>
-
-
-    // shivani 8/8/18
     <string name="email">Email ID</string>
     <string name="pass">Password</string>
     <string name="con_pass">Confirm Password</string>
     <string name="old_pass">Old Password</string>
     <string name="new_pass">New Password</string>
-
-    <string name="firstnm">First Name</string>
-    <string name="lastnm">Last Name</string>
-    <string name="mobile_num">Mobile No.</string>
-    <string name="alt_mno">Alt. Mobile No.</string>
-    <string name="phone_num">Phone No.</string>
-    <string name="name">Name</string>
-    <string name="dob">Date Of Birth</string>
-    <string name="add_info">Additional Information</string>
-    <string name="gender">Gender</string>
-
-
-    <string name="remarks">Remarks</string>
-    <string name="fromdate">From Date</string>
-    <string name="todate">To Date</string>
-    <string name="search">Search</string>
+    <string name="hospital">Hospital</string>
+    <string name="address">Address</string>
+    <string name="dob"> Date of Birth</string>
+    <string name="pincode">Pin code</string>
     <string name="submit">Submit</string>
     <string name="update">Update</string>
-
-    <string name="eventid">Event ID</string>
-    <string name="currentstatus">Current Status</string>
-    <string name="event_dt">Event Date and Time</string>
-    <string name="view_details">View Details</string>
-    <string name="patient_nm">Patient Name</string>
-    <string name="scheduled_time">Scheduled Time</string>
-
-    <string name="chsnm">CHS Name</string>
-    <string name="upload_files">Upload Files</string>
-    <string name="file_title">File Title</string>
-    <string name="appointment_time">Appointment Time</string>
-    <string name="concern_type">Concern Type</string>
-
-    <string name="select_hospital">Select Hospital</string>
-    <string name="select_specialty">Select Specialty</string>
-    <string name="select_priority">Select Priority</string>
-    <string name="select_physician">Select Physician</string>
-    <!-- 9-8-->
-    <string name="select_patient">Select Patient</string>
-
-    <string name="charge_amount">Chargeable Amount</string>
-    <string name="chgid">CHG ID</string>
-
-    <string name="doc_nm">Doctor Name</string>
-    <string name="concat_no">Contact Number</string>
-    <string name="age">Age</string>
-    <string name="city">City</string>
-    <string name="country">Country</string>
-    <string name="state">State</string>
-    <string name="street">Street</string>
-    <string name="house_no">House No</string>
-    <string name="aadhar_no">Aadhar No</string>
-
-    <!-- 9-8 -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="chief_complaint">Chief Complaint</string>
-    <string name="history_of_presenting_illness">History of Presenting Illness </string>
-    <string name="past_history">Past History</string>
-    <string name="medications">Medications </string>
-    <string name="physicians_remarks">Physician\'s Remarks</string>
-    <string name="body_temp">Body Temperature (Fahrenheit)</string>
-    <string name="blood_pressur">Blood Pressure (mm Hg Sys-Dia)</string>
-    <string name="pulse_rate">Pulse Rate (Beats /Minute)</string>
-    <string name="resp_rate">Respiratory Rate (Breaths/Minute)</string>
-    <string name="blood_glucose">Blood Glucose (Mg/dl)</string>
-    <string name="oxygen">Oxygen Saturation (mm Hg)</string>
-    <string name="rel_examination">Relevant Examination Findings</string>
-    <string name="req_create">Request Created </string>
-    <string name="req_open">Request Opened </string>
-    <string name="revew_upload">Review Uploaded </string>
-    <string name="revew_deliver">Request Delivered</string>
-    <string name="card_review">Cardiologist\'s Review </string>
-
-
-    // divya - 9/08/2018 ecg review
-    <string name="chg_id">CHG ID</string>
-    <string name="upload_ecg">Upload ECG(PDF/JPG/PNG)</string>
-    <string name="history_present_illness">History of Presenting Illness</string>
-    <string name="physician_remarks">Physician\'s Remarks</string>
-    <string name="vital_parameter">Vital Parameters</string>
-    <string name="blood_presser">Blood Pressure (mm Hg Sys/Dia)</string>
-    <string name="respiratory_rate">Respiratory Rate (Breaths/Minute)</string>
-    <string name="oxygen_satur">Oxygen Saturation (mm Hg)</string>
-    <string name="examination">Examination</string>
-    <string name="relevant_examination">Relevant Examination Findings</string>
-    <string name="sumit_send">Submit and Send</string>
-    <string name="phisician_detail">Physician Details</string>
-    <string name="followup_visit">Is it a follow-up visit?</string>
-    <string name="save">Save</string>
-
-    // 10-08-2018 divya
-    <string name="current_approve_bal">Current Approved Balance </string>
-    <string name="total_approve_bal">Total Unapproved Balance </string>
-    <string name="deposite_account">Deposit Account</string>
-    <string name="deposite_date">Deposit Date</string>
-    <string name="upload_receipt">Upload Receipt</string>
-    <string name="pincode">Pin code</string>
-    <string name="account">Account</string>
-    <string name="currency">Currency </string>
-    <string name="current_bal">Current Balance</string>
-    <string name="opening_bal">Opening Balance </string>
-    <string name="timezone">Time Zone </string>
-    <string name="address">Address</string>
-    <string name="request_type">Request Type</string>
-    <string name="deposits">Deposits</string>
-    <string name="transaction_id">Transaction ID</string>
-    <string name="deductions">Deductions</string>
-    <string name="balance">Balance</string>
-    <string name="add_funds_to_chs_wallet"> Add Funds to CHS Wallet</string>
-    <string name="statment_account"> Statement of Account</string>
-    <string name="requested_amount"> Requested Amount</string>
-    <string name="confirm_amount"> Confirm Amount</string>
-    <string name="banking_detail"> Banking Details</string>
-    <string name="canceled_cheque"> Cancelled Cheque Upload</string>
-    <string name="refund_request_str">  Refund Request</string>
-    <string name="purpose">  Purpose</string>
-    <string name="opd_activity">Create OPD Request</string>
-    <string name="ecg_activity">Upload ECG Examination</string>
-    <string name="video_consult_activity">Video Consultation Request</string>
-    <string name="second_opinion_activity">Second Opinion Request</string>
-    <string name="key_question">Key Question</string>
-    <string name="patient_event_history"> Patient Event History</string>
-    <string name="new_patient_str"> Patient Registration Form </string>
-    <string name="patient_search_form">  Patient Search Form</string>
-    <string name="edit_patient_detail">   Edit Patient Details</string>
-    // 13-8
-    <string name="key_questions">Key Questions</string>
-    <string name="chs_remarks">CHS Remarks</string>
-    <string name="hc_remarks">HC Remarks</string>
-
-
-    //11-8 shivani
-
-    <string name="licensecopy">License Copy</string>
-    <string name="report">Report</string>
-    <string name="hospital">Hospital</string>
-    <string name="requested_time_slot">Requested Time Slot</string>
-    <string name="confirmed_by">Confirmed By</string>
-    <string name="confirmed_for_date">Confirmed For Date </string>
-    <string name="confirmation_id">Confirmation ID</string>
-    <string name="otp">OTP</string>
-    <string name="speciality">Speciality</string>
-
-    //14/8/2018
-    <string name="price_list">Price List</string>
-    <string name="service">Service</string>
-    <string name="charg_price">Chargeable Price</string>
-    <string name="opd_book_request"> OPD Booking Request </string>
-    <string name="vpd_book_request"> VPD Booking Request </string>
-    <string name="spd_book_request">  SPD Booking Request  </string>
-    <string name="action_logout">Logout</string>
     <string name="action_profile">Profile</string>
     <string name="please_wait">Please wait...</string>
     <string name="select_service">Select Service</string>
-    // shivani 16-8
-    <string name="medical_center_nm">Medical Center Name</string>
-    <string name="center_head_name">Center Head Name</string>
-    <string name="center_head_mno">Center Head Mobile</string>
-    <string name="approval_remarks">Approval Remarks</string>
-    <string name="amount_approved">Amount Approved</string>
-    <string name="request_remarks">Request Remarks</string>
-    <string name="appointment_date">Appointment Date</string>
 
-    // shivani 17-8
-    <string name="pre_request_balance">Pre Request Balance </string>
-    <string name="hub_agent_code">Hub Agent Code</string>
+    <string name="team_leader_name">Team Leader Name</string>
+    <string name="team_leader_no">Team Leader No.</string>
 
-    <string name="registration_date">Registration Date</string>
-    <string name="number_of_requests">Number of Requests</string>
-    <string name="patient_reg">My Patient Register</string>
-    <string name="card_opinion">Cardiologist Opinion</string>
-    <string name="chm_name">CHM Name </string>
-    <string name="requested_for_date">Requested For Date </string>
-    <string name="deposit_date_and_time">Deposit Date and Time</string>
-    <string name="requested_refund">Requested Refund</string>
+    <string name="register">Register</string>
+    <string name="view">View</string>
 
     //18-7
     <string name="profile_update_activity">Update Profile</string>
     <string name="action_change_pass">Change Password</string>
+
+    <string name="str_presentaion">Presentation </string>
+
+    <!-- divya 25/10/2018 -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chs_leader_pres">CHS Lead Presentation </string>
+    <string name="next_visit_purpose">Next Visit Purpose</string>
+    <string name="appointment_date">Appointment Date</string>
+    <string name="biz_card">Biz Card</string>
+    <string name="select_leader">Select Lead</string>
+    <string name="prev_comment">Previous Comments</string>
+    <string name="date">Date</string>
+    <string name="comments">Comments</string>
+    <string name="form">Form</string>
+    <string name="submited_by">Submitted By</string>
+    <string name="comment_history">Comment History</string>
+
 
 </resources>
