@@ -31,7 +31,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tv_physician_name"
+                android:id="@+id/tv_nur_cener_nm"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
@@ -73,7 +73,7 @@
                             android:visibility="visible" />
 
                         <TextView
-                            android:id="@+id/tv_physician_speciality"
+                            android:id="@+id/tv_nur_mode"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
@@ -96,7 +96,7 @@
                             android:visibility="visible" />
 
                         <TextView
-                            android:id="@+id/tv_physician_drphone"
+                            android:id="@+id/tv_nur_discused"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
@@ -121,7 +121,7 @@
                             android:visibility="visible" />
 
                         <TextView
-                            android:id="@+id/tv_physician_qualification"
+                            android:id="@+id/tv_nur_action_req"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
@@ -148,7 +148,7 @@
                     android:visibility="visible" />
 
                 <TextView
-                    android:id="@+id/tv_physician_profile"
+                    android:id="@+id/tv_nur_appoi_next"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
@@ -173,7 +173,7 @@
                     android:visibility="visible" />
 
                 <TextView
-                    android:id="@+id/tv_physician_opdcharg"
+                    android:id="@+id/tv_nur_appoi_purpos"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
@@ -197,7 +197,7 @@
                     android:visibility="visible" />
 
                 <TextView
-                    android:id="@+id/tv_physician_payableamount"
+                    android:id="@+id/tv_nur_hist"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
@@ -222,14 +222,14 @@
                     android:visibility="gone" />
 
                 <TextView
-                    android:id="@+id/tv_physician_edit"
+                    android:id="@+id/tv_nur_edit"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@drawable/ic_edit_black"
                     android:textSize="@dimen/txt_small" />
 
                 <TextView
-                    android:id="@+id/tv_physician_delete"
+                    android:id="@+id/tv_nur_delete"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginLeft="@dimen/marg_tendp"

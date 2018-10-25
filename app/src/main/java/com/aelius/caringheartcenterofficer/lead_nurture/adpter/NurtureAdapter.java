@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.aelius.caringheartcenterofficer.R;
 import com.aelius.caringheartcenterofficer.lead_nurture.fragment.NurtureListFragment;
@@ -58,12 +59,24 @@ public class NurtureAdapter extends RecyclerView.Adapter<NurtureAdapter.MyViewHo
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
         LinearLayout parent_nurturelist_layout,child_nurturelist_layout;
+        TextView tv_nur_cener_nm,tv_nur_mode,tv_nur_discused,tv_nur_action_req,tv_nur_appoi_next,tv_nur_appoi_purpos,
+        tv_nur_hist,tv_nur_edit,tv_nur_delete;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
             parent_nurturelist_layout=itemView.findViewById(R.id.parent_nurturelist_layout);
             child_nurturelist_layout=itemView.findViewById(R.id.child_nurturelist_layout);
+            tv_nur_delete=itemView.findViewById(R.id.tv_nur_delete);
+            tv_nur_edit=itemView.findViewById(R.id.tv_nur_edit);
+            tv_nur_hist=itemView.findViewById(R.id.tv_nur_hist);
+            tv_nur_cener_nm=itemView.findViewById(R.id.tv_nur_cener_nm);
+            tv_nur_mode=itemView.findViewById(R.id.tv_nur_mode);
+            tv_nur_discused=itemView.findViewById(R.id.tv_nur_discused);
+            tv_nur_action_req=itemView.findViewById(R.id.tv_nur_action_req);
+            tv_nur_appoi_next=itemView.findViewById(R.id.tv_nur_appoi_next);
+            tv_nur_appoi_purpos=itemView.findViewById(R.id.tv_nur_appoi_purpos);
+
         }
     }
 }

@@ -21,6 +21,8 @@ import com.aelius.caringheartcenterofficer.Profile.ProfileActivity;
 
 import com.aelius.caringheartcenterofficer.lead_nurture.fragment.NurtureListFragment;
 import com.aelius.caringheartcenterofficer.lead_nurture.fragment.NurtureRegisterFragment;
+import com.aelius.caringheartcenterofficer.receipt.fragment.CreateReceiptFragment;
+import com.aelius.caringheartcenterofficer.receipt.fragment.ViewReceiptFragment;
 import com.aelius.caringheartcenterofficer.register_chs.fragment.RegisterCHSFragment;
 import com.aelius.caringheartcenterofficer.register_chs.fragment.ViewCHSFragment;
 import com.aelius.caringheartcenterofficer.utils.PreferHelper;
@@ -80,8 +82,9 @@ public class MainActivity extends AppCompatActivity {
                         .addChildModel(new ChildModel(getResources().getString(R.string.view)))
                   )
                 .addHeaderModel(
-                        new HeaderModel(getResources().getString(R.string.app_name), R.drawable.ic_doctor, true)
-
+                        new HeaderModel(getResources().getString(R.string.chs_receipt), R.drawable.ic_doctor, true)
+                                .addChildModel(new ChildModel(getResources().getString(R.string.register)))
+                                .addChildModel(new ChildModel(getResources().getString(R.string.view)))
                 )
                 .build()
                 .addOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
@@ -120,6 +123,18 @@ public class MainActivity extends AppCompatActivity {
                             }
                             if (childPosition == 1) {
                                 ViewCHSFragment addFrag = new ViewCHSFragment();
+                                FragmentReplace(addFrag, getString(R.string.view));
+                            }
+
+
+                        }if (groupPosition == 3) {
+
+                            if (childPosition == 0) {
+                                CreateReceiptFragment addFundFrag = new CreateReceiptFragment();
+                                FragmentReplace(addFundFrag, getString(R.string.register));
+                            }
+                            if (childPosition == 1) {
+                                ViewReceiptFragment addFrag = new ViewReceiptFragment();
                                 FragmentReplace(addFrag, getString(R.string.view));
                             }
 

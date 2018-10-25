@@ -17,6 +17,7 @@
     // shivani 25/10/18
     <string name="lead_nurture">Lead Nurture</string>
     <string name="registration">Registrations</string>
+    <string name="chs_receipt">CHS Registration Receipt </string>
 
 
     <string name="reg_nurture">Register Nurture</string>
@@ -45,7 +46,21 @@
     <string name="unique_id">Unique Id</string>
     <string name="chs_name">CHS Name</string>
     <string name="city">City</string>
+    <string name="select_package">Package</string>
+    <string name="chargeable_amount">Chargeable Amount</string>
+    <string name="amount">Amount</string>
+    <string name="receipt_no">Receipt No</string>
+    <string name="amount_received">Amount Received</string>
+    <string name="receipt_mode">Receipt Mode</string>
+    <string name="payment_proof">Payment Proof</string>
+        <string name="cheque_no">Cheque No</string>
+        <string name="bank_transaction_id">Bank Transaction Id</string>
+        <string name="paytm_transaction_id">Paytm Transaction Id</string>
+    <string name="other">Other</string>
     <string name="country">Country</string>
+    <string name="purpose">Purpose</string>
+    <string name="uplod_sign">Upload Sign</string>
+    <string name="discussed">Discussed</string>
 
     // bankinfo strings 15/10/2018
     //divya

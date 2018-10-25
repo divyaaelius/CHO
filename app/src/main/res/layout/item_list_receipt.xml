@@ -14,7 +14,7 @@
         android:padding="@dimen/marg_fivedp">
 
         <LinearLayout
-            android:id="@+id/parent_chsview_layout"
+            android:id="@+id/parent_receipt_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -30,7 +30,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tv_viewchs_led"
+                android:id="@+id/tv_receipt_led_nm"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5"
@@ -40,7 +40,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/child_chsview_layout"
+            android:id="@+id/child_receipt_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
@@ -68,12 +68,12 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
-                            android:text="@string/unique_id"
+                            android:text="@string/select_package"
                             android:textSize="@dimen/txt_small"
                             android:visibility="visible" />
 
                         <TextView
-                            android:id="@+id/tv_viewchs_uni_id"
+                            android:id="@+id/tv_receipt_package_nm"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
@@ -92,12 +92,12 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
-                            android:text="@string/chs_name"
+                            android:text="@string/receipt_no"
                             android:textSize="@dimen/txt_small"
                             android:visibility="visible" />
 
                         <TextView
-                            android:id="@+id/tv_viewchs_chs_nm"
+                            android:id="@+id/tv_receipt_no"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
@@ -117,12 +117,12 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
-                            android:text="@string/address"
+                            android:text="@string/amount"
                             android:textSize="@dimen/txt_small"
                             android:visibility="visible" />
 
                         <TextView
-                            android:id="@+id/tv_viewchs_add"
+                            android:id="@+id/tv_receipt_amo"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
@@ -144,12 +144,12 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:text="@string/country"
+                    android:text="@string/amount_received"
                     android:textSize="@dimen/txt_small"
                     android:visibility="visible" />
 
                 <TextView
-                    android:id="@+id/tv_viewchs_country"
+                    android:id="@+id/tv_receipt_amu_rec"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
@@ -169,12 +169,12 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:text="@string/state"
+                    android:text="@string/receipt_mode"
                     android:textSize="@dimen/txt_small"
                     android:visibility="visible" />
 
                 <TextView
-                    android:id="@+id/tv_viewchs_state"
+                    android:id="@+id/tv_receipt_mode"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
@@ -193,12 +193,12 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:text="@string/city"
+                    android:text="@string/cheque_no"
                     android:textSize="@dimen/txt_small"
                     android:visibility="visible" />
 
                 <TextView
-                    android:id="@+id/tv_viewchs_city"
+                    android:id="@+id/tv_receipt_ckeck_no"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
@@ -217,12 +217,60 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
-                    android:text="@string/mno"
+                    android:text="@string/bank_transaction_id"
                     android:textSize="@dimen/txt_small"
                     android:visibility="visible" />
 
                 <TextView
-                    android:id="@+id/tv_viewchs_mno"
+                    android:id="@+id/tv_receipt_tr_id_bank"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text=""
+                    android:textSize="@dimen/txt_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/marg_onedp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/paytm_transaction_id"
+                    android:textSize="@dimen/txt_small"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_receipt_tr_id_paym"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text=""
+                    android:textSize="@dimen/txt_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/marg_onedp"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/other"
+                    android:textSize="@dimen/txt_small"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_receipt_other"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
@@ -246,7 +294,7 @@
                     android:visibility="visible" />
 
                 <TextView
-                    android:id="@+id/tv_viewchs_hist"
+                    android:id="@+id/tv_receipt_hist"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
@@ -271,28 +319,19 @@
                     android:visibility="gone" />
 
                 <TextView
-                    android:id="@+id/tv_viewchs_edit"
+                    android:id="@+id/tv_receipt_edit"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="@drawable/ic_edit_black"
                     android:textSize="@dimen/txt_small" />
 
                 <TextView
-                    android:id="@+id/tv_viewchs_delete"
+                    android:id="@+id/tv_receipt_delete"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_marginLeft="@dimen/marg_tendp"
                     android:background="@drawable/ic_delete_black"
                     android:textSize="@dimen/txt_small" />
-
-                <TextView
-                    android:id="@+id/tv_viewchs_view"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="@dimen/marg_tendp"
-                    android:background="@drawable/ic_delete_black"
-                    android:textSize="@dimen/txt_small" />
-
 
             </LinearLayout>
 
