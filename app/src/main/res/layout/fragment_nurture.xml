@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lead_nurture.fragment.NurtureRegisterFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/marg_tendp"
+        android:padding="@dimen/marg_tendp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_fivedp"
+            android:gravity="bottom"
+            android:hint="@string/select_lead"
+            android:textSize="@dimen/txt_small" />
+
+        <Spinner
+            android:id="@+id/tech_spn_concerntype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/marg_twodp"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_fivedp"
+            android:gravity="bottom"
+            android:hint="@string/previous_comments"
+            android:textSize="@dimen/txt_small" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_eightdp"
+            android:gravity="bottom"
+            android:hint="@string/nurture_mode"
+            android:textSize="@dimen/txt_small" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="@dimen/marg_twenty"
+            android:layout_marginBottom="@dimen/marg_twodp"
+            android:background="@color/gray" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_fivedp">
+
+            <EditText
+                android:id="@+id/fund_edt_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="@string/app_name"
+                android:maxLines="1"
+                android:textSize="@dimen/txt_small" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_fivedp">
+
+            <TextView
+                android:id="@+id/tv_select_todate_statment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/calender"
+                android:hint="To date"
+                android:padding="@dimen/marg_fivedp" />
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_fivedp"
+            android:gravity="bottom"
+            android:hint="@string/select_lead"
+            android:textSize="@dimen/txt_small" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/marg_twodp"
+            android:background="@color/gray" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_fivedp">
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="@string/app_name"
+                android:maxLines="1"
+                android:textSize="@dimen/txt_small" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_search_fundstatement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marg_eightdp"
+            android:background="@drawable/button_blue"
+            android:text="@string/submit"
+            android:textColor="@color/White" />
+    </LinearLayout>
+
+
+</FrameLayout>

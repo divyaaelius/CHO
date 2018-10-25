@@ -64,6 +64,14 @@ public class LoginActivity extends AppCompatActivity {
         ConstMethod.LodDebug(TAG, "login id --->" + prefHelp.getUserId());
         ConstMethod.LodDebug(TAG, "login user detail id --->" + prefHelp.getUserDetailID());
 
+        if (prefHelp.getLogin()) {
+
+            startActivity(new Intent(context, MainActivity.class));
+            finish();
+            overridePendingTransition(R.anim.enter_anim, R.anim.exit_anim);
+
+        }
+
         //get deviced id
         deviceId = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
         ConstMethod.LodDebug(TAG, "login user deviceId --->" + deviceId);
@@ -96,9 +104,9 @@ public class LoginActivity extends AppCompatActivity {
                         password.setError("Enter Password");
                     } else if (ConstMethod.isValidPassword(password.getText().toString())) {
 
-                        startActivity(new Intent(context,MainActivity.class));
+
                         // service calling at here
-                    //    getUserLogin();
+                        getUserLogin();
 
                     } else {
                         password.requestFocus();
@@ -124,7 +132,7 @@ public class LoginActivity extends AppCompatActivity {
         String id = String.valueOf(identity.getText().toString().trim());
         String pass = password.getText().toString().trim();
         ApiInterface apiService = ApiRetrofit.getRetrofitInstance().create(ApiInterface.class);
-        call = apiService.loginUser(id, pass, "aaa", deviceId);
+        call = apiService.loginUser(id, pass, prefHelp.getDeviceToken(), deviceId);
         call.enqueue(new Callback<LoginModel>() {
             @Override
             public void onResponse(Call<LoginModel> call, Response<LoginModel> response) {
@@ -155,7 +163,8 @@ public class LoginActivity extends AppCompatActivity {
 
                            //     getDataAvailable(); // to set the data into the main dashboard
 
-                                startActivity(new Intent());
+                                startActivity(new Intent(context,MainActivity.class));
+                                finish();
                             }
                             else {
                                 Toast.makeText(context, "Username or Password is Wrong", Toast.LENGTH_SHORT).show();
@@ -178,6 +187,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
     }
+
 
     // find all id at here
     private void init() {
