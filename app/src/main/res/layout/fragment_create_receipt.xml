@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".receipt.fragment.CreateReceiptFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/marg_tendp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marg_fivedp"
+                android:gravity="bottom"
+                android:hint="@string/select_lead"
+                android:textSize="@dimen/txt_small" />
+
+            <Spinner
+                android:id="@+id/reciptreg_lead_spi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/reciptreg_tv_commhis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marg_fivedp"
+                android:gravity="bottom"
+                android:hint="@string/previous_comments"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/txt_small" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marg_fivedp"
+                android:gravity="bottom"
+                android:hint="@string/select_package"
+                android:textSize="@dimen/txt_small" />
+
+            <Spinner
+                android:id="@+id/reciptreg_package_spi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/reciptreg_tv_recno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marg_fivedp"
+                android:gravity="bottom"
+                android:hint="@string/receipt_no"
+                android:textSize="@dimen/txt_small" />
+
+
+            <TextView
+                android:id="@+id/reciptreg_tv_chrg_amou"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marg_fivedp"
+                android:gravity="bottom"
+                android:hint="@string/chargeable_amount"
+                android:textSize="@dimen/txt_small" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marg_fivedp">
+
+                <EditText
+                    android:id="@+id/reciptreg_edt_amu_recived"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="@string/amount_received"
+                    android:maxLines="1"
+                    android:textSize="@dimen/txt_small" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marg_fivedp"
+                android:gravity="bottom"
+                android:hint="@string/receipt_mode"
+                android:textSize="@dimen/txt_small" />
+
+            <Spinner
+                android:id="@+id/reciptreg_mode_rec_spi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/reciptreg_tv_pay_proof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marg_fiftendp"
+                android:drawableRight="@drawable/ic_upload"
+                android:drawablePadding="@dimen/marg_threedp"
+                android:hint="@string/payment_proof"
+                android:padding="@dimen/marg_threedp"
+                android:textSize="@dimen/txt_small" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marg_fivedp">
+
+                <EditText
+                    android:id="@+id/reciptreg_edt_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="@string/remarks"
+                    android:maxLines="3"
+                    android:minLines="3"
+                    android:textSize="@dimen/txt_small" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btn_submit_reciptreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marg_eightdp"
+                android:background="@drawable/button_blue"
+                android:text="@string/submit"
+                android:textColor="@color/White" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marg_eightdp"
+                android:background="@drawable/button_blue"
+                android:text="@string/submit"
+                android:textColor="@color/White"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

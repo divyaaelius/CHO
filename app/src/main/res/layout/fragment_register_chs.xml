@@ -22,11 +22,13 @@
             android:textSize="@dimen/txt_small" />
 
         <Spinner
+            android:id="@+id/rec_chs_lead_spi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:spinnerMode="dropdown" />
 
         <TextView
+            android:id="@+id/rec_chs_tv_comm_his"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/marg_fivedp"
@@ -41,7 +43,7 @@
             android:layout_marginTop="@dimen/marg_fivedp">
 
             <EditText
-
+                android:id="@+id/rec_chs_edt_center_nm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="top"
@@ -57,7 +59,7 @@
             android:layout_marginTop="@dimen/marg_fivedp">
 
             <EditText
-
+                android:id="@+id/rec_chs_edt_add"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="top"
@@ -78,6 +80,7 @@
             android:textSize="@dimen/txt_small" />
 
         <Spinner
+            android:id="@+id/rec_chs_state_spi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:spinnerMode="dropdown" />
@@ -91,6 +94,7 @@
             android:textSize="@dimen/txt_small" />
 
         <Spinner
+            android:id="@+id/rec_chs_city_spi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:spinnerMode="dropdown" />
@@ -101,7 +105,7 @@
             android:layout_marginTop="@dimen/marg_fivedp">
 
             <EditText
-
+                android:id="@+id/rec_chs_edt_pin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="top"
@@ -117,7 +121,7 @@
             android:layout_marginTop="@dimen/marg_fivedp">
 
             <EditText
-
+                android:id="@+id/rec_chs_edt_mno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="top"
@@ -133,7 +137,7 @@
             android:layout_marginTop="@dimen/marg_fivedp">
 
             <EditText
-
+                android:id="@+id/rec_chs_edt_hed_nm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="top"
@@ -149,7 +153,7 @@
             android:layout_marginTop="@dimen/marg_fivedp">
 
             <EditText
-
+                android:id="@+id/rec_chs_edt_hed_no"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="top"
@@ -164,7 +168,7 @@
             android:layout_marginTop="@dimen/marg_fivedp">
 
             <EditText
-
+                android:id="@+id/rec_chs_edt_hed_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="top"
@@ -175,7 +179,7 @@
         </android.support.design.widget.TextInputLayout>
 
         <TextView
-            android:id="@+id/tv_card_licensecopy"
+            android:id="@+id/rec_chs_tv_img"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/marg_fiftendp"
@@ -191,7 +195,7 @@
             android:background="@color/gray"/>
 
         <TextView
-            android:id="@+id/tv_card_cardiopicture"
+            android:id="@+id/rec_chs_tv_add_proof"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/marg_fiftendp"
@@ -214,6 +218,7 @@
             android:textSize="@dimen/txt_small" />
 
         <Spinner
+            android:id="@+id/rec_chs_conact_spi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:spinnerMode="dropdown" />
@@ -223,7 +228,7 @@
             android:layout_marginTop="@dimen/marg_fivedp">
 
             <EditText
-
+                android:id="@+id/rec_chs_edt_remark"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="top"
@@ -235,17 +240,18 @@
         </android.support.design.widget.TextInputLayout>
 
         <TextView
+            android:id="@+id/rec_chs_tv_uplod_sign"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/marg_fiftendp"
             android:drawableRight="@drawable/ic_upload"
             android:drawablePadding="@dimen/marg_threedp"
-            android:hint="@string/select_img"
+            android:hint="@string/uplod_sign"
             android:padding="@dimen/marg_threedp"
             android:textSize="@dimen/txt_small" />
 
         <Button
-            android:id="@+id/btn_search_fundstatement"
+            android:id="@+id/rec_chs_btn_submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/marg_eightdp"

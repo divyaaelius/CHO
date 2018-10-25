@@ -21,22 +21,19 @@
             android:textSize="@dimen/txt_small" />
 
         <Spinner
-            android:id="@+id/tech_spn_concerntype"
+            android:id="@+id/nur_spi_lead"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:spinnerMode="dropdown" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginBottom="@dimen/marg_twodp"
-            android:background="@color/black" />
 
         <TextView
+            android:id="@+id/nur_tv_comm_his"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/marg_fivedp"
             android:gravity="bottom"
+            android:textColorHint="@color/colorPrimary"
             android:hint="@string/previous_comments"
             android:textSize="@dimen/txt_small" />
 
@@ -49,16 +46,11 @@
             android:textSize="@dimen/txt_small" />
 
         <Spinner
+            android:id="@+id/nur_spi_mode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:spinnerMode="dropdown" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:padding="@dimen/marg_twenty"
-            android:layout_marginBottom="@dimen/marg_twodp"
-            android:background="@color/gray" />
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -66,11 +58,11 @@
             android:layout_marginTop="@dimen/marg_fivedp">
 
             <EditText
-                android:id="@+id/fund_edt_remark"
+                android:id="@+id/nur_edt_diss"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="top"
-                android:hint="@string/app_name"
+                android:hint="@string/discussed"
                 android:maxLines="1"
                 android:textSize="@dimen/txt_small" />
 
@@ -82,11 +74,11 @@
             android:layout_marginTop="@dimen/marg_fivedp">
 
             <TextView
-                android:id="@+id/tv_select_todate_statment"
+                android:id="@+id/nur_tv_appoi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableRight="@drawable/calender"
-                android:hint="To date"
+                android:hint="next_appointment"
                 android:padding="@dimen/marg_fivedp" />
         </android.support.design.widget.TextInputLayout>
         <TextView
@@ -94,19 +86,14 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/marg_fivedp"
             android:gravity="bottom"
-            android:hint="@string/select_lead"
+            android:hint="@string/purpose"
             android:textSize="@dimen/txt_small" />
 
         <Spinner
+            android:id="@+id/nur_spi_purpose"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:spinnerMode="dropdown" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginBottom="@dimen/marg_twodp"
-            android:background="@color/gray" />
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -114,18 +101,18 @@
             android:layout_marginTop="@dimen/marg_fivedp">
 
             <EditText
-
+                android:id="@+id/nur_edt_remark"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="top"
-                android:hint="@string/app_name"
+                android:hint="@string/remarks"
                 android:maxLines="1"
                 android:textSize="@dimen/txt_small" />
 
         </android.support.design.widget.TextInputLayout>
 
         <Button
-            android:id="@+id/btn_search_fundstatement"
+            android:id="@+id/nur_btn_submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/marg_eightdp"

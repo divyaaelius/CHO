@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.aelius.caringheartcenterofficer.R;
 import com.aelius.caringheartcenterofficer.lead_nurture.fragment.NurtureListFragment;
@@ -56,12 +57,27 @@ public class ViewCHSAdapter extends RecyclerView.Adapter<ViewCHSAdapter.MyViewHo
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
         LinearLayout parent_chsview_layout,child_chsview_layout;
+        TextView tv_viewchs_led,tv_viewchs_uni_id,tv_viewchs_chs_nm,tv_viewchs_add,tv_viewchs_country,
+                tv_viewchs_state,tv_viewchs_city,tv_viewchs_mno,tv_viewchs_hist,tv_viewchs_edit,
+                tv_viewchs_delete,tv_viewchs_view;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
             parent_chsview_layout=itemView.findViewById(R.id.parent_chsview_layout);
             child_chsview_layout=itemView.findViewById(R.id.child_chsview_layout);
+            tv_viewchs_led=itemView.findViewById(R.id.tv_viewchs_led);
+            tv_viewchs_uni_id=itemView.findViewById(R.id.tv_viewchs_uni_id);
+            tv_viewchs_chs_nm=itemView.findViewById(R.id.tv_viewchs_chs_nm);
+            tv_viewchs_add=itemView.findViewById(R.id.tv_viewchs_add);
+            tv_viewchs_country=itemView.findViewById(R.id.tv_viewchs_country);
+            tv_viewchs_state=itemView.findViewById(R.id.tv_viewchs_state);
+            tv_viewchs_city=itemView.findViewById(R.id.tv_viewchs_city);
+            tv_viewchs_mno=itemView.findViewById(R.id.tv_viewchs_mno);
+            tv_viewchs_hist=itemView.findViewById(R.id.tv_viewchs_hist);
+            tv_viewchs_edit=itemView.findViewById(R.id.tv_viewchs_edit);
+            tv_viewchs_delete=itemView.findViewById(R.id.tv_viewchs_delete);
+            tv_viewchs_view=itemView.findViewById(R.id.tv_viewchs_view);
         }
     }
 }
