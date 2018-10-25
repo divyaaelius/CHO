@@ -66,6 +66,36 @@
     <string name="form">Form</string>
     <string name="submited_by">Submitted By</string>
     <string name="comment_history">Comment History</string>
+    // shivani 25/10/18
+    <string name="lead_nurture">Lead Nurture</string>
+    <string name="registration">Registrations</string>
+
+
+
+
+    <string name="reg_nurture">Register Nurture</string>
+    <string name="view_nurture">View Nurture</string>
+    <string name="select_lead">Select Lead</string>
+    <string name="previous_comments">Previous Comments</string>
+    <string name="nurture_mode">Nurture Mode</string>
+    <string name="center_name">Center Name</string>
+    <string name="discussed_with">Discussed With</string>
+    <string name="action_required">Action Required</string>
+    <string name="next_appointment">Next Appointment</string>
+    <string name="next_appointment_purpose">Next Appointment Purpose</string>
+    <string name="remarks_for_team">Remarks For Team</string>
+    <string name="history">History</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="remarks">Remarks</string>
+    <string name="connect_to">Connect To</string>
+    <string name="add_proof">Address Proof</string>
+    <string name="select_img">Select Image</string>
+    <string name="center_head_name">Center Head Name</string>
+    <string name="center_head_no">Center Head No.</string>
+    <string name="center_head_email">Center Head Email</string>
+    <string name="mno">Mobile no.</string>
+    <string name="medical_center_name">Medical Center Name</string>
 
 
 </resources>

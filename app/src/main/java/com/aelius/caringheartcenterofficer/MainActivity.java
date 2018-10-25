@@ -19,6 +19,7 @@ import android.widget.ExpandableListView;
 import com.aelius.caringheartcenterofficer.Profile.ChangePasswordActivity;
 import com.aelius.caringheartcenterofficer.Profile.ProfileActivity;
 
+import com.aelius.caringheartcenterofficer.presentationmodule.presfragment.PresentationFragment;
 import com.aelius.caringheartcenterofficer.utils.PreferHelper;
 import com.techatmosphere.expandablenavigation.model.ChildModel;
 import com.techatmosphere.expandablenavigation.model.HeaderModel;
@@ -67,11 +68,14 @@ public class MainActivity extends AppCompatActivity {
 
         navigationExpandableListView.init(this)
                 .addHeaderModel(
-                        new HeaderModel(getResources().getString(R.string.chc_banking_information), R.drawable.ic_arrow_down))
+                        new HeaderModel(getResources().getString(R.string.str_presentaion), R.drawable.ic_doctor, true)
+                                .addChildModel(new ChildModel(getResources().getString(R.string.register)))
+                                .addChildModel(new ChildModel(getResources().getString(R.string.view)))
+                )
                   .addHeaderModel(
-                        new HeaderModel(getResources().getString(R.string.ecg_review_request), R.drawable.ic_arrow_down))
+                        new HeaderModel(getResources().getString(R.string.app_name), R.drawable.ic_arrow_down))
                 .addHeaderModel(
-                        new HeaderModel(getResources().getString(R.string.cardiologist), R.drawable.ic_doctor, true)
+                        new HeaderModel(getResources().getString(R.string.app_name), R.drawable.ic_doctor, true)
                                 .addChildModel(new ChildModel(getResources().getString(R.string.register)))
                                 .addChildModel(new ChildModel(getResources().getString(R.string.view)))
                 )
@@ -92,14 +96,11 @@ public class MainActivity extends AppCompatActivity {
                     public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
                         navigationExpandableListView.setSelected(groupPosition, childPosition);
 
-                        if (groupPosition == 2) {
+                        if (groupPosition == 0) {
 
                             if (childPosition == 0) {
-                               /* CardiologistFragment addFundFrag = new CardiologistFragment();
-                                Bundle bundle=new Bundle();
-                                bundle.putInt("carTypePage", ConstVariable.ONE);
-                                addFundFrag.setArguments(bundle);
-                                FragmentReplace(addFundFrag, getString(R.string.add_cardiologist));*/
+                                PresentationFragment addFundFrag = new PresentationFragment();
+                                FragmentReplace(addFundFrag, getString(R.string.str_presentaion));
                             }
                             if (childPosition == 1) {
                                 /*CardiologistViewFragment addFrag = new CardiologistViewFragment();
