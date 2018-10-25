@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/marg_tendp"
+    android:background="@drawable/gobtnborder"
+    android:elevation="@dimen/marg_fivedp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marg_fiftendp"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_fivedp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marg_fivedp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_select_fromdate_report"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="0.4"
+                    android:background="@drawable/textview_background"
+                    android:hint="From date"
+                    android:padding="@dimen/marg_fivedp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_select_todate_report"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="0.4"
+                    android:background="@drawable/textview_background"
+                    android:hint="To date"
+                    android:padding="@dimen/marg_fivedp"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btn_search_report"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/button_blue"
+                    android:text="Search"
+                    android:textColor="@color/White" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marg_threedp"
+                android:orientation="vertical"
+                android:padding="@dimen/marg_threedp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="@string/str_Select_patient"
+                    android:textSize="@dimen/txt_small" />
+
+                <Spinner
+                    android:id="@+id/spn_select_patient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown">
+
+                </Spinner>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rec_patient_report"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/marg_tendp"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/marg_tendp"
+    android:background="@drawable/gobtnborder"
+    android:elevation="@dimen/marg_fivedp"
+    tools:context=".Profile.ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marg_tendp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_img"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marg_tendp">
+
+                <EditText
+                    android:id="@+id/profile_edt_hnm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hospital"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/txt_small" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marg_tendp">
+
+                <EditText
+                    android:id="@+id/profile_edt_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/address"
+                    android:maxLines="5"
+                    android:minLines="3"
+                    android:singleLine="true"
+                    android:textSize="@dimen/txt_small" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marg_tendp">
+
+                <EditText
+                    android:id="@+id/profile_edt_pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pincode"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/txt_small" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marg_tendp">
+
+                <EditText
+                    android:id="@+id/profile_edt_team_leader_nm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/team_leader_name"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/txt_small" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marg_tendp">
+
+                <EditText
+                    android:id="@+id/profile_edt_team_leader_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/team_leader_no"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/txt_small" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/profile_btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/marg_fivedp"
+                android:background="@drawable/button_blue"
+                android:text="@string/submit"
+                android:textColor="@color/White" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+</LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#012B72</color>
+    <color name="colorPrimaryDark">#a2c3c4c7</color>
+    <color name="colorAccent">#838181</color>
+    <color name="colorPrimaryLight">#1b4ea0</color>
+    <color name="colorMiddel">#486fad</color>
+    <color name="colorStart">#6294e5</color>
+    <color name="color_background">#1f487b</color>
+    <color name="color_background_login">#68c9eef7</color>
+
+    <color name="White">#fff</color>
+    <color name="Black">#000</color>
+    <color name="gray">#cccccc</color>
+    <color name="blue">#428bca</color>
+    <color name="lightblue">#00ccff</color>
+    <color name="darkblue">#003399</color>
+
+    <color name="green">#FF25621A</color>
+    <color name="red">#ec3c39</color>
+    <color name="yellow">#f5e20b</color>
+
+    <color name="color_orange">#E67817</color>
+    <color name="color_orange_dark">#EE543A</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="LightBlue">#ADD8E6</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="DodgerBlue">#1E90FF</color>
+    <color name="DeepSkyBlue">#009FFF</color>
+    <color name="DarkOrange">#FF7F50</color>
+    <color name="MediumSeaGreen">#3CB371</color>
+    <color name="color_light_green">#359355</color>
+    <color name="color_light_blue">#2a7ac6</color>
+    <color name="color_purple">#8C2CFF</color>
+    <color name="color_light_purple">#9E4BFF</color>
+    <color name="silver_light">#E0E0E0</color>
+
+    <color name="color_light_cofee">#B84E27</color>
+    <color name="color_light_skyblue">#4A97C1</color>
+    <color name="color_light_red">#CD476F</color>
+    <color name="color_light_silver">#ededed</color>
+    <color name="splash_color">#F3ECC5</color>
+
+
+    <color name="darkOrange">#FF8C00</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorSilver">#C0C0C0</color>
+    <color name="colorgray">#808080</color>
+    <color name="colorgainsboro">#DFDBDA</color>
+    <color name="bottom_navigation_color">#777777</color>
+    <color name="text_color">#5D5D5D</color>
+
+    <color name="bt_accent">#00B8D4</color>
+    <color name="colorblack">#000000</color>
+    <color name="colorblackLight">#323232</color>
+    <color name="background">#eeeeee</color>
+    <color name="transparent">#00000000</color>
+    <color name="video_duration_background">#8c222222</color>
+    <color name="feed_cards_title_text_color">#222222</color>
+    <color name="dim_grey">#dcdcdc</color>
+
+    <color name="text_color_primary">#5D5D5D</color>
+    <color name="text_color_secondary">#8c222222</color>
+    <color name="divider_color">#B5B5B5</color>
+
+    <color name="black_transparent">#88676767</color>
+    <color name="play_list_background">#EDECED</color>
+
+
+</resources>

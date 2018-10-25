@@ -1,0 +1,35 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="txt_small">15sp</dimen>
+    <dimen name="txt_medium">20sp</dimen>
+
+    <dimen name="marg_fivedp">5dp</dimen>
+    <dimen name="marg_tendp">10dp</dimen>
+    <dimen name="marg_eightdp">8dp</dimen>
+    <dimen name="marg_fiftendp">15dp</dimen>
+
+    <dimen name="padding_fivedp">5dp</dimen>
+    <dimen name="padding_tendp">10dp</dimen>
+    <dimen name="padding_eightdp">8dp</dimen>
+    <dimen name="padding_twodp">2dp</dimen>
+    <dimen name="padding_threedp">3dp</dimen>
+    <dimen name="padding_onedp">1dp</dimen>
+
+    <dimen name="txt_18small">18sp</dimen>
+
+    <dimen name="marg_threedp">3dp</dimen>
+    <dimen name="marg_onedp">1dp</dimen>
+    <dimen name="marg_twodp">2dp</dimen>
+
+    <dimen name="marg_twenty">20dp</dimen>
+    <dimen name="marg_twentyfivedp">25dp</dimen>
+    <dimen name="marg_thirtydp">30dp</dimen>
+
+
+</resources>
