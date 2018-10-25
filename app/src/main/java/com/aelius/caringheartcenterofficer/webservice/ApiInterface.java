@@ -10,9 +10,9 @@ import retrofit2.http.POST;
 
 public interface ApiInterface {
 
-    //login  http://ch.healthcareinfosystems.in/index.php/api/Login_module_api/CHCLogin
+    //login  http://ch.healthcareinfosystems.in/index.php/api/Login_module_api/CHOLogin
     @FormUrlEncoded
-    @POST("Login_module_api/CHCLogin")
+    @POST("Login_module_api/CHOLogin")
     Call<LoginModel> loginUser(@Field("identity") String Username,
                                @Field("password") String password,
                                @Field("token_device") String device_token,

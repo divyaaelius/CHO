@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -20,7 +19,6 @@ import android.widget.ExpandableListView;
 import com.aelius.caringheartcenterofficer.Profile.ChangePasswordActivity;
 import com.aelius.caringheartcenterofficer.Profile.ProfileActivity;
 
-import com.aelius.caringheartcenterofficer.presentationmodule.presfragment.PresentationFragment;
 import com.aelius.caringheartcenterofficer.utils.PreferHelper;
 import com.techatmosphere.expandablenavigation.model.ChildModel;
 import com.techatmosphere.expandablenavigation.model.HeaderModel;
@@ -44,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         context = this;
@@ -52,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
 
         prefHelp = new PreferHelper(this);
 
-        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        toggle = new ActionBarDrawerToggle(
+         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+         toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
@@ -61,30 +59,6 @@ public class MainActivity extends AppCompatActivity {
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         View header = navigationView.getHeaderView(0);
 
-        getSupportFragmentManager().addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
-            @Override
-            public void onBackStackChanged() {
-                if (getSupportFragmentManager().getBackStackEntryCount() > 0) {
-                    getSupportActionBar().setDisplayHomeAsUpEnabled(true); // show back button
-                    toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            onBackPressed();
-                        }
-                    });
-                } else {
-                    //show hamburger
-                    getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-                    toggle.syncState();
-                    toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            drawer.openDrawer(GravityCompat.START);
-                        }
-                    });
-                }
-            }
-        });
         setNavigationView();
 
     }
@@ -93,14 +67,11 @@ public class MainActivity extends AppCompatActivity {
 
         navigationExpandableListView.init(this)
                 .addHeaderModel(
-                        new HeaderModel(getResources().getString(R.string.str_presentaion), R.drawable.ic_doctor, true)
-                                .addChildModel(new ChildModel(getResources().getString(R.string.register)))
-                                .addChildModel(new ChildModel(getResources().getString(R.string.view)))
-                )
+                        new HeaderModel(getResources().getString(R.string.chc_banking_information), R.drawable.ic_arrow_down))
+                  .addHeaderModel(
+                        new HeaderModel(getResources().getString(R.string.ecg_review_request), R.drawable.ic_arrow_down))
                 .addHeaderModel(
-                        new HeaderModel(getResources().getString(R.string.app_name), R.drawable.ic_arrow_down))
-                .addHeaderModel(
-                        new HeaderModel(getResources().getString(R.string.app_name), R.drawable.ic_doctor, true)
+                        new HeaderModel(getResources().getString(R.string.cardiologist), R.drawable.ic_doctor, true)
                                 .addChildModel(new ChildModel(getResources().getString(R.string.register)))
                                 .addChildModel(new ChildModel(getResources().getString(R.string.view)))
                 )
@@ -121,14 +92,18 @@ public class MainActivity extends AppCompatActivity {
                     public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
                         navigationExpandableListView.setSelected(groupPosition, childPosition);
 
-                        if (groupPosition == 0) {
+                        if (groupPosition == 2) {
 
                             if (childPosition == 0) {
-                                PresentationFragment addFundFrag = new PresentationFragment();
-                                FragmentReplace(addFundFrag, getString(R.string.chs_leader_pres));
+                               /* CardiologistFragment addFundFrag = new CardiologistFragment();
+                                Bundle bundle=new Bundle();
+                                bundle.putInt("carTypePage", ConstVariable.ONE);
+                                addFundFrag.setArguments(bundle);
+                                FragmentReplace(addFundFrag, getString(R.string.add_cardiologist));*/
                             }
                             if (childPosition == 1) {
-
+                                /*CardiologistViewFragment addFrag = new CardiologistViewFragment();
+                                FragmentReplace(addFrag, getString(R.string.cardiologist_view));*/
                             }
 
 
@@ -189,16 +164,15 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_change_pass) {
-            startActivity(new Intent(this, ChangePasswordActivity.class));
+            startActivity(new Intent(this,ChangePasswordActivity.class));
             return true;
-        } else if (id == R.id.action_profile) {
-            startActivity(new Intent(this, ProfileActivity.class));
+        }else if(id==R.id.action_profile){
+            startActivity(new Intent(this,ProfileActivity.class));
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
-
     public void FragmentReplace(Fragment subfrag, String fragTitle) {
         getSupportActionBar().setTitle(fragTitle);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

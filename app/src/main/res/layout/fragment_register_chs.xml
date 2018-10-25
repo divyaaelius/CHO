@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register_chs.fragment.RegisterCHSFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/marg_tendp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_fivedp"
+            android:gravity="bottom"
+            android:hint="@string/select_lead"
+            android:textSize="@dimen/txt_small" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_fivedp"
+            android:gravity="bottom"
+            android:hint="@string/previous_comments"
+            android:textColorHint="@color/colorPrimary"
+            android:textSize="@dimen/txt_small" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_fivedp">
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="@string/medical_center_name"
+                android:maxLines="1"
+                android:textSize="@dimen/txt_small" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_fivedp">
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="@string/address"
+                android:maxLines="3"
+                android:minLines="3"
+                android:textSize="@dimen/txt_small" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_fivedp"
+            android:gravity="bottom"
+            android:hint="@string/state"
+            android:textSize="@dimen/txt_small" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_fivedp"
+            android:gravity="bottom"
+            android:hint="@string/city"
+            android:textSize="@dimen/txt_small" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_fivedp">
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="@string/pincode"
+                android:maxLines="1"
+                android:textSize="@dimen/txt_small" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_fivedp">
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="@string/mno"
+                android:maxLines="1"
+                android:textSize="@dimen/txt_small" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_fivedp">
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="@string/center_head_name"
+                android:maxLines="1"
+                android:textSize="@dimen/txt_small" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_fivedp">
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="@string/center_head_no"
+                android:maxLines="1"
+                android:textSize="@dimen/txt_small" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_fivedp">
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="@string/center_head_email"
+                android:maxLines="1"
+                android:textSize="@dimen/txt_small" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_card_licensecopy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_fiftendp"
+            android:drawableRight="@drawable/ic_upload"
+            android:drawablePadding="@dimen/marg_threedp"
+            android:hint="@string/select_img"
+            android:padding="@dimen/marg_threedp"
+            android:textSize="@dimen/txt_small" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="@dimen/marg_onedp"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/tv_card_cardiopicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_fiftendp"
+            android:padding="@dimen/marg_threedp"
+            android:drawablePadding="@dimen/marg_threedp"
+            android:drawableRight="@drawable/ic_upload"
+            android:hint="@string/add_proof"
+            android:textSize="@dimen/txt_small" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:padding="@dimen/marg_onedp"
+            android:background="@color/gray"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marg_fivedp"
+            android:gravity="bottom"
+            android:hint="@string/city"
+            android:textSize="@dimen/txt_small" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+</ScrollView>
+</FrameLayout>
