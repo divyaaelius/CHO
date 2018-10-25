@@ -28,6 +28,15 @@
     <string name="next_appointment_purpose">Next Appointment Purpose</string>
     <string name="remarks_for_team">Remarks For Team</string>
     <string name="history">History</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="add_proof">Address Proof</string>
+    <string name="select_img">Select Image</string>
+    <string name="center_head_name">Center Head Name</string>
+    <string name="center_head_no">Center Head No.</string>
+    <string name="center_head_email">Center Head Email</string>
+    <string name="mno">Mobile no.</string>
+    <string name="medical_center_name">Medical Center Name</string>
 
     // bankinfo strings 15/10/2018
     //divya
